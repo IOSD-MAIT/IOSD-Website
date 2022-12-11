@@ -1,0 +1,248 @@
+* {
+  font-family: 'Montserrat', sans-serif;;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background: #f2f3eb;
+    transition: background 0.5s cubic-bezier(0.4, 0.4, 0, 1);
+}
+
+li {
+  list-style: none;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+
+hr
+{
+   width: 100px;
+   /* border-width: 1px; */
+   height: 2px;
+   border: none;
+   background-color: #000;
+   margin: 0px;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.whole-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+}
+
+.pre-head {
+  height: 20px;
+  background: #f2f3eb;
+  z-index: 10;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  height: 70px;
+  width: 95%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  z-index: 10;
+  /*font-family: "Roboto",sans-serif;*/
+  /* background-color: #000; */
+  border-radius: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  background: radial-gradient(#2b2b2bd6, #000000d6);
+}
+
+.left-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo
+{
+    margin-left: 50px;
+    margin-top: 10px;
+    height: 50px;
+}
+.right-head {
+  display: flex;
+  /* width: 85%; */
+  justify-content: center;
+  align-items: center;
+  /* column-gap: 4%; */
+  font-family: "Roboto", sans-serif;
+}
+
+.about,
+.team,
+.domain,
+.contact
+ {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  /*width: fit-content;*/
+  /*overflow: hidden;*/
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  color: var(--primaryText);
+}
+.right-head ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-block-start: 1em;
+}
+
+.right-head li {
+  margin-right: 50px;
+  color: #fff;
+}
+
+.color_mode
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #595959;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: #595959; */
+}
+.color_mode:hover
+{
+    background-color: #595959;
+}
+
+/************ COVER OPEN *****************/
+.cover
+{
+    /* align-items: center; */
+    display: flex;
+    background: rgba(0,0,0,0.0);
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: center;
+    margin: 0 60px 0px;
+    padding-top: 120px;
+    /* margin-top: 200px; */
+    /* width: 1180px; */
+    max-width: calc(100% - 60px);
+}
+
+.cover-content
+{
+    align-items: flex-start;
+    background: rgba(0,0,0,0.0);
+    flex: none;
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0px 40px 0px 0px;
+    /* transition-delay: 300ms;
+    transition-duration: 1000ms; */
+    width: calc(50% - 40px);
+    max-width: calc(50% - 40px);
+}
+.cover-content-heading
+{
+    font-size: 30px;
+}
+
+.member-number
+{
+    display: flex;
+}
+.core-num,
+.memb-num
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 50%;
+}
+
+.icon-hr
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.cover-collage
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+/* .cover-collage img {
+  transition: .2s;
+}
+
+.cover-collage img:hover {
+  box-shadow: 0 50px 50px -25px rgb(0 0 0 / 30%);
+  transform: rotate(-2deg) scale(1.03);transform: rotate(10deg) scale(1.1);
+} */
+
+.left-collage
+{
+    width: 50%;
+    margin-top: 120px;
+}
+.left-collage img
+{
+    height: 15rem;
+    border-radius:15px;
+    margin-bottom: 20px;
+} 
+.right-collage img
+{
+    height: 15rem;
+    border-radius:15px;
+     margin-bottom: 20px;
+} 
+
+/* .right-collage-img2
+{
+    height: 10rem !important;
+    width: 90%;
+}
+.right-collage-img3
+{
+    height: 10rem !important;
+    width: 90%;
+} */
+/************ COVER CLOSED *****************/
