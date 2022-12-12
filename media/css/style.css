@@ -47,6 +47,52 @@ hr
   height: 0px;
 }
 
+/* FIXED SOCIAL */
+.back-to-top {
+  position: fixed;
+  right: 3rem;
+  padding: 0.3rem 0.4rem 0 0.4rem;
+  opacity: 0.8;
+  bottom: -20%;
+  transition: 0.5s;
+}
+.back-to-top-show {
+  bottom: 5rem;
+}
+.back-to-top span {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #383838;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.fixed-social {
+  display: flex;
+  flex-direction: column;
+  bottom: 30%;
+  right: -10%;
+  height: 12em;
+  /* justify-content: space-between; */
+  row-gap: 2.2rem;
+  position: fixed;
+  transition: 0.5s;
+}
+.fixed-social .iconify {
+  color: #383838;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.fixed-social .iconify:hover {
+  color: #722c56;
+}
+
+.fixed-social-show {
+  right: 3.5rem;
+}
+/* FIXED SOCIAL CLOSED */
+
+
 .whole-header
 {
     display: flex;
@@ -185,6 +231,10 @@ hr
 {
     font-size: 30px;
 }
+.cover-content-heading span
+{
+  background-color: #e2b6cd;
+}
 
 .social-home {
   display: flex;
@@ -283,14 +333,61 @@ hr
      margin-bottom: 20px;
 } 
 
-/* .right-collage-img2
-{
-    height: 10rem !important;
-    width: 90%;
-}
-.right-collage-img3
-{
-    height: 10rem !important;
-    width: 90%;
-} */
 /************ COVER CLOSED *****************/
+
+/************ ABOUT OPEN ******************/
+.about-whole
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 4rem 0;
+}
+.about-info
+{
+  display: flex;
+  max-width: 85%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  /* background-color: rgb(153, 153, 153); */
+  padding: 2rem;
+  column-gap: 5rem;
+}
+
+.about-info-img
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #000;
+  padding: 1.5rem;
+  border-radius: 20px;
+  
+}
+.about-info-img img
+{
+  height: 30rem;
+  width: 30rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-info-content
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.about-info-content h1
+{
+  font-size: 3rem;
+}
+.about-info-content p
+{
+  font-size: 1.5rem;
+}
+/************ ABOUT CLOSED ******************/
