@@ -1,15 +1,19 @@
 /**********ROOT ELEMENTS**********/
 
 :root {
-  --backgroundClr: #f2f3eb; /*White bluish*/
-  --secondaryBackgroundClr:#383838; /*grey*/
-  --primaryText: #000; /*black*/
+  --backgroundClr: #f2f3eb; 
+  --secondaryBackgroundClr:#7f7f7f;
+  --backRadient1: #383838d6;
+  --backRadient2: #202020d6;
+  /* --secondaryBackgroundClr:#383838; */
+  --primaryText: #000;
   --secondaryText: #44102f;
-  --btns: #383838; /*blue*/
-  --btnHover: #722c56; /*ligth vlue*/
+  --btns: #383838; 
+  --btnHover: #722c56; 
   --btnText:#d1d1f7;
-  --footer: #4e66fc; /*ligth vlue*/
-  --input: rgba(43, 34, 88, 10%); /*grey*/
+  --btnBackground:#383838;
+  --footer: #4e66fc; 
+  --input: rgba(43, 34, 88, 10%); 
   --timeline: rgba(43, 34, 88, 10%);
   --highlight: #e2b6cd;
    --primaryWhite: #ffffff;
@@ -291,7 +295,7 @@ button {
   justify-content: center;
   align-items: center;
   border: 3px solid #2c2c2c;
-  background-color: var(--secondaryBackgroundClr);
+  background-color: var(--btnBackground);
   color: var(--btnText);
   border-radius: 3rem;
   padding: 1rem;
@@ -366,7 +370,8 @@ button {
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-color: var(--secondaryBackgroundClr);
+  /* background-color: var(--secondaryBackgroundClr); */
+  background: radial-gradient(var(--backRadient1), var(--backRadient2));
   padding: 1.5rem;
   border-radius: 20px;
   
@@ -414,7 +419,10 @@ button {
   align-items: center;
   width: 80%;
   margin-top: 3rem;
-  background-color: var(--secondaryBackgroundClr);
+  /* background-color: var(--secondaryBackgroundClr); */
+  backdrop-filter: blur(10px);
+  background: radial-gradient(var(--backRadient1), var(--backRadient2));
+  /* background: radial-gradient(#383838d6, #202020d6); */
   padding: 2rem;
   border-radius: 15px;
 }
