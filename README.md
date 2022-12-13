@@ -1,4 +1,4 @@
-# IOSD-Website
+# Official Website of IOSD-MAIT
 
 To access this project <a href="https://kushagrajain58-cmd.github.io/IOSD-Website/" target="_blank">click here</a>
 
