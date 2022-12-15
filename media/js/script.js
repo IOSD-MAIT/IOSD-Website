@@ -1,3 +1,25 @@
+//////////// THEME /////////////////////
+
+var darkBtn = document.querySelectorAll(".dark_mode");
+var lightBtn = document.querySelectorAll(".light_mode");
+
+darkBtn[0].addEventListener("click", function () {
+    lightBtn[0].classList.remove('hide');
+    darkBtn[0].classList.add('hide');
+    document.documentElement.setAttribute('data-theme', 'dark');
+    // localStorage.setItem('theme', 'dark');
+});
+
+lightBtn[0].addEventListener("click", function () {
+    darkBtn[0].classList.remove('hide');
+    lightBtn[0].classList.add('hide');
+    document.documentElement.setAttribute('data-theme', 'light');
+    // localStorage.setItem('theme', 'light');
+
+});
+
+////////////// SCROLL ///////////////////
+
 const sections = Array.prototype.slice.call(document.querySelectorAll(".section"));
 
 window.addEventListener("scroll", function() {
