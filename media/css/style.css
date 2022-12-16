@@ -93,7 +93,7 @@ button {
 }
 
 .hide {
-  display: none;
+  display: none !important;
   visibility: hidden;
   width: 0px;
   height: 0px;
@@ -239,6 +239,7 @@ button {
   margin-right: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
+  user-select: none;
   /* background-color: #595959; */
 }
 .color_mode:hover {
